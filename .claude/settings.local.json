@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(mkdir -p public/images/menu-boards public/images/food public/images/gallery public/images/brand src/components src/i18n src/data)",
+      "Bash(mv logo.jpg public/images/brand/logo.jpg)",
+      "Bash(mv 5902432809274510770.jpg public/images/menu-boards/storefront.jpg)",
+      "Bash(mv 5902432809274510772.jpg public/images/menu-boards/desserts-boissons-asiatique.jpg)",
+      "Bash(mv 5902432809274510773.jpg public/images/menu-boards/desserts-nounours-jus.jpg)",
+      "Bash(npm install *)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/src/main.jsx)",
+      "Bash(curl -s http://localhost:5173/src/App.jsx)",
+      "PowerShell(Test-Path *)",
+      "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; & $edge --headless=new --disable-gpu --hide-scrollbars --virtual-time-budget=4000 --screenshot=\"C:\\\\Users\\\\ASUS\\\\Documents\\\\sushi-dine\\\\preview-menu.png\" --window-size=1280,1450 \"http://localhost:5173/?y=1500\" 2>$null; Start-Sleep -Seconds 2; \"ok\")"
+    ]
+  }
+}
